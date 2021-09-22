@@ -5,29 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
   <header class="header">
+    <img src="assets/logo.svg" class="header__logo">
     <div class="header__inner">
-      <picture class="header__inner-image">
+      <picture class="header__inner__left">
         <source srcset="./assets/desktop/image-hero-left.png" media="(min-width:1440px)">
-        <source srcset="./assets/tablet/image-hero.png" media="(max-width:768px)">
+        <source srcset="./assets/tablet/image-hero.png" media="(max-width:850px)">
         <img src="./assets/desktop/image-hero-left.png" alt="user faces">
       </picture>
 
       <div class="header__inner__body">
-        <h1 class="header__inner_title">Group Chat for Everyone</h1>
-        <p class="header__inner_description">
+        <h1 class="header__inner__title">Group Chat for Everyone</h1>
+        <p class="header__inner__description">
           Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
         </p>
-        <button class="btn btn__header">Download v1.3</button>
-        <button class="btn__header-new">What is it?</button>
+        <div class="header__inner__btn-container">
+          <button class="btn btn_header">Download <span class="btn__text">v1.3</span></button>
+          <button class="btn-new">What is it?</button>
+        </div>
       </div>
       <!-- ./header__inner_body -->
-      <picture class="header__inner-right">
-        <source srcset="./assets/desktop/image-hero-right.png" media="(min-width:1440px)">
+      <picture class="header__inner__right">
+        <source srcset="./assets/desktop/image-hero-right.png" media="(min-width:850px)">
         <img/>
       </picture>
     </div>
@@ -37,10 +40,10 @@
   <main class="main">
     <article class="content">
       <figure role="group" class="content__image-container">
-        <figure><img src="./assets/desktop/image-woman-in-videocall.jpg" alt="woman in videocall"></figure>
-        <figure><img src="./assets/desktop/image-women-videochatting.jpg" alt="woman are viodechatting"></figure>
-        <figure><img src="./assets/desktop/image-man-texting.jpg" alt="man in videocall"></figure>
-        <figure><img src="./assets/desktop/image-men-in-meeting.jpg" alt="man in vidoe meeting"></figure>
+        <figure class="image-middle"><img src="./assets/desktop/image-woman-in-videocall.jpg" alt="woman in videocall" class="content__image-container__img"></figure>
+        <figure class="image-middle"><img src="./assets/desktop/image-women-videochatting.jpg" alt="woman are viodechatting" class="content__image-container__img"></figure>
+        <figure class="image-middle"><img src="./assets/desktop/image-man-texting.jpg" alt="man in videocall" class="content__image-container__img"></figure>
+        <figure class="image-middle"><img src="./assets/desktop/image-men-in-meeting.jpg" alt="man in vidoe meeting" class="content__image-container__img"></figure>
       </figure>
       <section class="content__body">
         <h2 class="content__body__title">
@@ -59,7 +62,7 @@
     <div class="footer__inner">
       <p class="footer__inner-text">Experience more together</p>
       <p class="footer__inner-text">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-      <button class="btn btn__footer">Download v1.3</button>
+      <button class="btn btn_footer">Download <span class="btn__text">v1.3</span></button>
     </div>
   </footer>  
 </body>

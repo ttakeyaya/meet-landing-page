@@ -1,0 +1,31 @@
+// Style buttons
+.btn {
+  cursor: pointer;
+  width: 19.3rem;
+  height: 5.8rem;
+  font-size: 1.6rem;
+  border-radius: 5rem;
+  border: none;
+  color: var(--color-white);
+  &.btn_header {
+    background-color: var(--color-teal);
+  }
+  &.btn_footer {
+    background-color: var(--color-slateblue);
+  }
+  &__text {
+    opacity: 0.7;
+    padding-left: 0.4rem;
+  }
+}
+.btn-new {
+  cursor: pointer;
+  width: 13.9rem;
+  height: 5.8rem;
+  font-size: 1.6rem;
+  background-color: var(--color-slateblue);
+  border-radius: 3rem;
+  padding: 0.16rem 0.29rem;
+  color: var(--color-white);
+  border: none;
+}

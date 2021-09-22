@@ -40,5 +40,12 @@ html {
 }
 
 body {
+  width: 100vw;
   font-family: $redhat;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
 }

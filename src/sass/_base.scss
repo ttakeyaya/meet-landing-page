@@ -1,0 +1,44 @@
+/** 
+-Import Google Fonts and Define font variables
+-Define color varibalbes
+-Reset CSS properties(margin, padding)
+-set 1rem to be 10px
+*/
+
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+
+// Font variable
+$redhat: "Red Hat Display", sans-serif;
+
+// Colors
+:root {
+  --color-teal: rgb(77, 150, 168);
+  --color-slateblue: rgb(133, 95, 177);
+  --color-black: rgb(40, 40, 61);
+  --color-gray: rgb(133, 135, 157);
+  --color-lightskeyblue: rgb(143, 227, 249);
+  --color-blueviolet: rgb(217, 184, 255);
+  --color-white: rgb(250, 250, 250);
+}
+
+// Resetting
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $redhat;
+}

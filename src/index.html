@@ -11,9 +11,11 @@
 <body>
   <header class="header">
     <div class="header__inner">
-      <figure class="header__inner-left">
+      <picture class="header__inner-image">
+        <source srcset="./assets/desktop/image-hero-left.png" media="(min-width:1440px)">
+        <source srcset="./assets/tablet/image-hero.png" media="(max-width:768px)">
         <img src="./assets/desktop/image-hero-left.png" alt="user faces">
-      </figure>
+      </picture>
 
       <div class="header__inner__body">
         <h1 class="header__inner_title">Group Chat for Everyone</h1>
@@ -24,16 +26,17 @@
         <button class="btn__header-new">What is it?</button>
       </div>
       <!-- ./header__inner_body -->
-      <figure class="header__inner-right">
-        <img src="./assets/desktop/image-hero-right.png" alt="user faces">
-      </figure>
+      <picture class="header__inner-right">
+        <source srcset="./assets/desktop/image-hero-right.png" media="(min-width:1440px)">
+        <img/>
+      </picture>
     </div>
     <!-- /.header__inner -->
   </header>
 
   <main class="main">
     <article class="content">
-      <figure class="content__image-container">
+      <figure role="group" class="content__image-container">
         <figure><img src="./assets/desktop/image-woman-in-videocall.jpg" alt="woman in videocall"></figure>
         <figure><img src="./assets/desktop/image-women-videochatting.jpg" alt="woman are viodechatting"></figure>
         <figure><img src="./assets/desktop/image-man-texting.jpg" alt="man in videocall"></figure>

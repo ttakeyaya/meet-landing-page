@@ -229,6 +229,7 @@ img {
 }
 
 .footer {
+  width: 100vw;
   text-align: center;
   display: flex;
   justify-content: center;
